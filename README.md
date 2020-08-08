@@ -25,14 +25,14 @@ work flow:
         generate layout hardcode the table first
             table columns: picture, id, title, director, release date
         sort by: director or title*
-
+        drop down menu to filter
 
         code to dynamically render
 
 
+to deploy :   npm run deploy
 
-
-
+tools added: axios, bootstrap,
 
 
 
