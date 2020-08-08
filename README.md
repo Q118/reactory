@@ -21,6 +21,8 @@ work flow:
         API running, search query
             decide on an APi: just need to searcg and sort by at least one category
             OMDB: 
+time travel
+            create json file of 10 movies
 
         generate layout hardcode the table first
             table columns: picture, id, title, director, release date
