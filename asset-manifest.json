@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.js": "/reactory/static/js/main.7975e496.chunk.js",
-    "main.js.map": "/reactory/static/js/main.7975e496.chunk.js.map",
+    "main.js": "/reactory/static/js/main.33d64b5b.chunk.js",
+    "main.js.map": "/reactory/static/js/main.33d64b5b.chunk.js.map",
     "runtime-main.js": "/reactory/static/js/runtime-main.71fcf063.js",
     "runtime-main.js.map": "/reactory/static/js/runtime-main.71fcf063.js.map",
-    "static/js/2.d36efffd.chunk.js": "/reactory/static/js/2.d36efffd.chunk.js",
-    "static/js/2.d36efffd.chunk.js.map": "/reactory/static/js/2.d36efffd.chunk.js.map",
+    "static/css/2.f3cffc9e.chunk.css": "/reactory/static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.af349388.chunk.js": "/reactory/static/js/2.af349388.chunk.js",
+    "static/js/2.af349388.chunk.js.map": "/reactory/static/js/2.af349388.chunk.js.map",
     "index.html": "/reactory/index.html",
-    "precache-manifest.e986f174f043ddd3fe03be87b3a819ab.js": "/reactory/precache-manifest.e986f174f043ddd3fe03be87b3a819ab.js",
+    "precache-manifest.9e154e6882d633ff006ceac3022382dc.js": "/reactory/precache-manifest.9e154e6882d633ff006ceac3022382dc.js",
     "service-worker.js": "/reactory/service-worker.js",
-    "static/js/2.d36efffd.chunk.js.LICENSE.txt": "/reactory/static/js/2.d36efffd.chunk.js.LICENSE.txt"
+    "static/css/2.f3cffc9e.chunk.css.map": "/reactory/static/css/2.f3cffc9e.chunk.css.map",
+    "static/js/2.af349388.chunk.js.LICENSE.txt": "/reactory/static/js/2.af349388.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.71fcf063.js",
-    "static/js/2.d36efffd.chunk.js",
-    "static/js/main.7975e496.chunk.js"
+    "static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.af349388.chunk.js",
+    "static/js/main.33d64b5b.chunk.js"
   ]
 }
