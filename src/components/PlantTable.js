@@ -10,7 +10,7 @@ class PlantTable extends React.Component {
       });
     };
     render() {
-      const sortedplants = plants.sort((a, b) => {
+      const sortedPlants = plants.sort((a, b) => {
         if (a.name === b.name) {
           return 0;
         }
@@ -37,17 +37,17 @@ class PlantTable extends React.Component {
                 <th onClick={this.handleNameSort} scope="col">
                   Name
                 </th>
-                <th scope="col">Occupation</th>
-                <th scope="col">Location</th>
+                <th scope="col">Benefits</th>
+                <th scope="col">Safety</th>
               </tr>
             </thead>
             <tbody>
-              {sortedplants.map((friend) => (
-                <tr key={friend.id}>
-                  <th scope="row">{friend.id}</th>
-                  <td>{friend.name}</td>
-                  <td>{friend.occupation}</td>
-                  <td>{friend.location}</td>
+              {sortedPlants.map((plant) => (
+                <tr key={plant.id}>
+                  <th scope="row">{plant.id}</th>
+                  <td>{plant.name}</td>
+                  <td>{plant.Benefits}</td>
+                  <td>{plant.Safety}</td>
                 </tr>
               ))}
             </tbody>
