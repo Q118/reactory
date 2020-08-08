@@ -1,11 +1,11 @@
 import React from 'react';
-// import MovieContainer from "./components/MovieContainer"
+import PlantTable from "./components/PlantTable"
 
 
 function App() {
   return (
-    <h1>Hello Test!</h1>
-    //  <MovieContainer />;
+    // <h1>Hello Test!</h1>
+    <PlantTable />
   );
 }
 
