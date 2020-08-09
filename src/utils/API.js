@@ -7,3 +7,5 @@ export default {
     return axios.get(BASEURL + query + APIKEY);
   },
 };
+
+// https://www.omdbapi.com/?t=&apikey=8356777e&s=momento

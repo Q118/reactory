@@ -45,7 +45,7 @@ class PlantTable extends React.Component {
               {sortedPlants.map((plant) => (
                 <tr key={plant.id}>
                   <th scope="row">{plant.id}</th>
-                  <td>{plant.name}</td>
+                  <td>{plant.Name}</td>
                   <td>{plant.Benefits}</td>
                   <td>{plant.Safety}</td>
                 </tr>
