@@ -2,13 +2,30 @@
 
 import React from "react";
 // import plants from "../plants.json";
-import React, { useState } from "react";
+// import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style.css";
 
+// const FILTER_MAP = {
+//     All: () => true,
+//     Active: plant => !plant.safeLongTerm,
+//     Completed: plant => plant.safeLongTerm
+//   };
+// const filteredPlants = plants.filter(plant => plant.safeLongTerm === "Yes");
+
+
 function Buttons(props) {
+    // const [allPlants] = useState([...plants]);
+    // const [safePlants] = useState(plants.filter(plant => plant.safeLongTerm === "Yes"));
+    // const [unsafePlants] = useState(plants.filter(plant => plant.safeLongTerm === "No"));
+
     
-   
+    // const [filter, setFilter] = useState("All");
+
+
+    //     setFilterOption(event.target);
+    
+    
 
 	return (
 		<div className="container buttonContainer mb-2 text-center">
@@ -21,9 +38,9 @@ function Buttons(props) {
 				&nbsp;&nbsp;&nbsp;
 				<button
 					className="btn safeButton btn-lg"
-                    onClick={props.handleFilter}
+                    onClick={props.handleFilterChange}
                     >
-					Filter: At Least 4 Safety
+					Filter: Long-Term Safety
 				</button>
 			</div>
 		</div>
@@ -38,13 +55,6 @@ export default Buttons;
 // />
 // onChange={props.handleFilterChange}
 
-// handleSafetyFilter = () => {
-//     let lowSafe = plants.filter(plant => plant.Safety <= 4);
-//     let shighSafe = plants.filter(plant => plant.Safety >= 4);
-//     this.setState({
-// 			filter: this.state.filter === "ascending" ? "descending" : "ascending",
-// 		});
-//   }
 
   
 // handleFilter = (plantId) => {

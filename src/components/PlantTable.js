@@ -6,23 +6,30 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./style.css";
 import Buttons from "./buttons";
 
+// const filteredPlants = plants.filter(plant => plant.safeLongTerm === "Yes");
+const allPlants = plants.filter(plant => plant.safeLongTerm === "Yes" || "n/a" || "No");
+
 class PlantTable extends React.Component {
-	state = { order: "ascending", list: "list" };
+	state = { order: "ascending", allPlants };
 
-   
-
-	// function to soprt by Name
+	// function to sort by Name
 	handleNameSort = () => {
 		this.setState({
 			order: this.state.order === "ascending" ? "descending" : "ascending",
 		});
   };
 
+  handleFilterChange = () =>  allPlants.filter(plant => plant.safeLongTerm === "Yes") ;
 
 	render() {
-		const sortedPlants = plants.sort((a, b) => {
+    // const filteredPlants = plants.filter(plant => plant.safeLongTerm === "Yes");
+    
+   
+
+    const sortedPlants = allPlants.sort((a, b) => {
 			if (a.Name === b.Name) {
-				return 0;
+        return 0;
+        
 			}
 			if (this.state.order === "ascending") {
 				if (a.Name < b.Name) {
@@ -33,8 +40,15 @@ class PlantTable extends React.Component {
 			if (a.Name < b.Name) {
 				return 1;
 			}
-			return -1;
-		});
+      return -1;
+      
+
+    });
+    
+   
+
+    
+
 		return (
 			<div className="container mt-4">
 				<header className="headerContainer mb-2 pt-2 text-center">
@@ -42,7 +56,7 @@ class PlantTable extends React.Component {
 				</header>
         <Buttons
          handleNameSort={this.handleNameSort} 
-         handleFilter={this.handleFilter}
+         handleFilterChange={this.handleFilter}
          />
 				<table className="table tableContainer">
 					<thead>
@@ -50,7 +64,7 @@ class PlantTable extends React.Component {
 							<th scope="col">ID</th>
 							<th scope="col">Name</th>
 							<th scope="col">Benefits</th>
-							<th scope="col">Safety</th>
+							<th scope="col">Safe Long-Term?</th>
 							<th scope="col">Picture</th>
 						</tr>
 					</thead>
@@ -60,7 +74,7 @@ class PlantTable extends React.Component {
 								<th scope="row">{plant.Id}</th>
 								<td><strong>{plant.Name}</strong></td>
 								<td>{plant.Benefits}</td>
-								<td>{plant.Safety}</td>
+								<td>{plant.safeLongTerm}</td>
 								<td>
 									{" "}
 									<img alt={plant.Name} src={plant.Image} className="picture" />

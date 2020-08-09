@@ -43,7 +43,7 @@ tools added: axios, bootstrap,
 
 future ideas: make this app with anothyer api to diversify my portfolio
     search for condition 
-
+    filter by above 4 or below 4
 
 
 It must be built with react, have a table, ability to sort by at least one category, ability to filter by at least one category.

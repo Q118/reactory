@@ -3,70 +3,70 @@
 		"Id": 1,
 		"Name": "Gingko",
 		"Benefits": "brain health, dementia, alzheimer's",
-		"Safe Long-Term?": true,
+		"safeLongTerm": "Yes",
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body1_1296x728.jpg?h=1528"
 	},
 	{
 		"Id": 2,
 		"Name": "Turmeric",
 		"Benefits": "inflammation and arthritis pain, skin health",
-		"Safe Long-Term?": false,
+		"safeLongTerm": "No",
 		"Image": "https://st2.depositphotos.com/2224328/9590/v/950/depositphotos_95902666-stock-illustration-turmeric-with-flower-on-white.jpg"
 	},
 	{
         "Id": 3,
 		"Name": "Evening Primrose Oil",
-		"Benefits": "PMS, menopause, diabetic, multiple sclerosis",
-		"Safe Long-Term?": false,
+		"Benefits": "PMS, menopause, diabetic neuropathy, multiple sclerosis",
+		"safeLongTerm": "No",
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body3_1296x728.jpg?h=1528"
 	},
 	{
 		"Id": 4,
 		"Name": "Flax Seed",
 		"Benefits": "hot flashes, weight-loss, preventing colon cancer",
-		"Safe Long-Term?": null,
+		"safeLongTerm": "n/a",
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body4_1296x728.jpg?h=1528"
 	},
 	{
 		"Id": 5,
 		"Name": "Tea Tree Oil",
 		"Benefits": "acne, athlete's foot, insect bites, dandriff",
-		"Safe Long-Term?": false,
+		"safeLongTerm": "No",
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body5_1296x728.jpg?h=1528"
 	},
 	{
         "Id": 6,
 		"Name": "Echinacea",
 		"Benefits": "colds, immunity, bronchitis, upper respiratory infections",
-		"Safe Long-Term?": true,
+		"safeLongTerm": "Yes",
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body6_1296x728.jpg?h=1528"
 	},
 	{
 		"Id": 7,
 		"Name": "Grapeseed Extract",
 		"Benefits": "lowering cholesterol, leg vein circulation, edema",
-		"Safe Long-Term?": true,
+		"safeLongTerm": "Yes",
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body7_1296x728.jpg?h=1528"
 	},
 	{
 		"Id": 8,
 		"Name": "Lavender",
 		"Benefits": "anxiety, stress, migraines",
-		"Safe Long-Term?": true,
+		"safeLongTerm": "Yes",
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body8_1296x728.jpg?h=1528"
 	},
 	{
         "Id": 9,
 		"Name": "Chamomile",
 		"Benefits": "insomnia, anxiety, stress",
-		"Safe Long-Term?": true,
+		"safeLongTerm": "Yes",
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body9_1296x728.jpg?h=1528"
 	},
 	{
         "Id": 10,
 		"Name": "Ginger",
 		"Benefits": "nausea, motion sickness, heartburn",
-		"Safe Long-Term?": null,
+		"safeLongTerm": "n/a",
 		"Image": "https://i.pinimg.com/originals/47/17/c1/4717c1c660348113fa6295360215e257.png"
 	}
 ]
