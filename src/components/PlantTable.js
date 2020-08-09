@@ -43,6 +43,7 @@ class PlantTable extends React.Component {
                 </th>
                 <th scope="col">Benefits</th>
                 <th scope="col">Safety</th>
+                <th scope="col">Picture</th>
               </tr>
             </thead>
             <tbody>
@@ -52,6 +53,12 @@ class PlantTable extends React.Component {
                   <td>{plant.Name}</td>
                   <td>{plant.Benefits}</td>
                   <td>{plant.Safety}</td>
+                  <td> <img 
+                  alt = {plant.Name}
+                  src = {plant.Image} 
+                  className= "picture" 
+                  /> 
+                  </td>
                 </tr>
               ))}
             </tbody>

@@ -17,4 +17,13 @@ body {
     border-style: groove;
     border-color: #aa3d46;
     border-width: 5px;
+    font-size: x-large;
+}
+
+.picture {
+    height: 100px;
+    width: 150px;
+    border-style: groove;
+    border-color: #aa3d46;
+    border-width: 2px;
 }
