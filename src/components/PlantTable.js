@@ -1,6 +1,7 @@
 import React from "react";
 import plants from "../plants.json";
 import "bootstrap/dist/css/bootstrap.css";
+import "./style.css";
 
 class PlantTable extends React.Component {
     state = { order: "ascending" };
@@ -29,11 +30,11 @@ class PlantTable extends React.Component {
         return -1;
       });
       return (
-        <div>
-          <header>
-            <h1>plants Table</h1>
+        <div className = "container mt-4">
+          <header className= "headerContainer mb-4 pt-2 text-center">
+            <h1>Medicinal Plants</h1>
           </header>
-          <table className="table">
+          <table className="table tableContainer">
             <thead>
               <tr>
                 <th scope="col">ID</th>

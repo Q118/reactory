@@ -1,0 +1,20 @@
+.headerContainer {
+    background-color: #eeada2;
+    color: #122d1d;
+    border-style: groove;
+    border-color: #aa3d46;
+    border-width: 5px;
+}
+
+body {
+    background-image: url("./plantBack.jpg");
+
+}
+
+.tableContainer {
+    background-color: #eeada2;
+    color: #122d1d;
+    border-style: groove;
+    border-color: #aa3d46;
+    border-width: 5px;
+}
