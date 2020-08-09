@@ -1,9 +1,12 @@
 import React from "react";
 import plants from "../plants.json";
+import "bootstrap/dist/css/bootstrap.css";
 
 class PlantTable extends React.Component {
     state = { order: "ascending" };
   
+
+    // function to soprt by Name
     handleNameSort = () => {
       this.setState({
         order: this.state.order === "ascending" ? "descending" : "ascending",
@@ -11,16 +14,16 @@ class PlantTable extends React.Component {
     };
     render() {
       const sortedPlants = plants.sort((a, b) => {
-        if (a.name === b.name) {
+        if (a.Name === b.Name) {
           return 0;
         }
         if (this.state.order === "ascending") {
-          if (a.name < b.name) {
+          if (a.Name < b.Name) {
             return -1;
           }
           return 1;
         }
-        if (a.name < b.name) {
+        if (a.Name < b.Name) {
           return 1;
         }
         return -1;
@@ -43,8 +46,8 @@ class PlantTable extends React.Component {
             </thead>
             <tbody>
               {sortedPlants.map((plant) => (
-                <tr key={plant.id}>
-                  <th scope="row">{plant.id}</th>
+                <tr key={plant.Id}>
+                  <th scope="row">{plant.Id}</th>
                   <td>{plant.Name}</td>
                   <td>{plant.Benefits}</td>
                   <td>{plant.Safety}</td>

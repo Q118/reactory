@@ -1,10 +1,10 @@
 import React from 'react';
 import PlantTable from "./components/PlantTable"
-
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
-    // <h1>Hello Test!</h1>
+    
     <PlantTable />
   );
 }
