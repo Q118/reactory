@@ -1,6 +1,7 @@
 For this assignment, you'll create a employee directory with React. 
 
-medicinal plants found in nature or herb stores to take for reasons in leui of western medicine
+medicinal plants found in nature or herb stores to take for reasons in leui of western medicine.
+some people may want to finsd alternatives for their ailments
 
 This assignment will require you to break up your application's UI into components, 
 manage component state, 
@@ -23,10 +24,9 @@ work flow:
         API running, search query
             decide on an APi: just need to searcg and sort by at least one category
             OMDB: 
-time travel
-            create json file of 10 movies
+        
 
-        generate layout hardcode the table first
+        generate layout
             table columns:  ID, name, benefits, safety rating out of 5, image
         sort by condintion
         drop down menu to filter
@@ -35,7 +35,7 @@ time travel
 
 todo:
 -rewrite readme about the reason why this would benefit people
--create variables for table components
+
 
 to deploy :   npm run deploy
 

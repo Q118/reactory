@@ -11,7 +11,7 @@
 		"Name": "Turmeric",
 		"Benefits": "inflammation and arthritis pain, skin health",
 		"Safety": 5,
-		"Image": "https://www.pinterest.com/pin/create/button?guid=1ckkcHUn0JJM-2&url=https%3A%2F%2Fwww.healthline.com%2Fhealth%2Fmost-powerful-medicinal-plants&media=https%3A%2F%2Fpost.healthline.com%2Fwp-content%2Fuploads%2F2020%2F04%2F11450-Natures_9_Most_Powerful_Plants-body2_1296x728.jpg&description=9%20Most%20Powerful%20Medicinal%20Plants%20and%20Herbs%2C%20Backed%20by%20Science"
+		"Image": "https://st2.depositphotos.com/2224328/9590/v/950/depositphotos_95902666-stock-illustration-turmeric-with-flower-on-white.jpg"
 	},
 	{
         "Id": 3,
@@ -24,14 +24,14 @@
 		"Id": 4,
 		"Name": "Flax Seed",
 		"Benefits": "hot flashes, weight-loss, preventing colon cancer",
-		"Safety": 4.5,
+		"Safety": 3.5,
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body4_1296x728.jpg?h=1528"
 	},
 	{
 		"Id": 5,
 		"Name": "Tea Tree Oil",
 		"Benefits": "acne, athlete's foot, insect bites, dandriff",
-		"Safety": 4,
+		"Safety": 3.5,
 		"Image": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/04/11450-Natures_9_Most_Powerful_Plants-body5_1296x728.jpg?h=1528"
 	},
 	{

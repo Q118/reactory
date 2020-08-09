@@ -2,6 +2,7 @@ import React from "react";
 import plants from "../plants.json";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style.css";
+import Buttons from "./buttons"
 
 class PlantTable extends React.Component {
     state = { order: "ascending" };
@@ -34,11 +35,18 @@ class PlantTable extends React.Component {
           <header className= "headerContainer mb-4 pt-2 text-center">
             <h1>Medicinal Plants</h1>
           </header>
+          <Buttons 
+          handleNameSort={this.handleNameSort}
+          
+          />
+          
+          
+    
           <table className="table tableContainer">
             <thead>
               <tr>
                 <th scope="col">ID</th>
-                <th onClick={this.handleNameSort} scope="col">
+                <th scope="col">
                   Name
                 </th>
                 <th scope="col">Benefits</th>
