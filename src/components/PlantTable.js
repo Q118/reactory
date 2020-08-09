@@ -7,14 +7,18 @@ import "./style.css";
 import Buttons from "./buttons";
 
 class PlantTable extends React.Component {
-	state = { order: "ascending" };
+	state = { order: "ascending", list: "list" };
+
+   
 
 	// function to soprt by Name
 	handleNameSort = () => {
 		this.setState({
 			order: this.state.order === "ascending" ? "descending" : "ascending",
 		});
-	};
+  };
+
+
 	render() {
 		const sortedPlants = plants.sort((a, b) => {
 			if (a.Name === b.Name) {
@@ -38,6 +42,7 @@ class PlantTable extends React.Component {
 				</header>
         <Buttons
          handleNameSort={this.handleNameSort} 
+         handleFilter={this.handleFilter}
          />
 				<table className="table tableContainer">
 					<thead>
