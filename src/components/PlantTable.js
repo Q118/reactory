@@ -6,13 +6,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./style.css";
 import Buttons from "./buttons";
 
-// const filteredPlants = plants.filter(plant => plant.safeLongTerm === "Yes");
-const allPlants = plants.filter(
-	(plant) => plant.safeLongTerm === "Yes" || "n/a" || "No"
-);
 
 class PlantTable extends React.Component {
-	state = { order: "ascending", allPlants };
+	state = { order: "ascending"};
 
 	// function to sort by Name
 	handleNameSort = () => {
@@ -21,13 +17,10 @@ class PlantTable extends React.Component {
 		});
 	};
 
-	handleFilterChange = () =>
-		allPlants.filter((plant) => plant.safeLongTerm === "Yes");
 
 	render() {
-		// const filteredPlants = plants.filter(plant => plant.safeLongTerm === "Yes");
 
-		const sortedPlants = allPlants.sort((a, b) => {
+		const sortedPlants = plants.sort((a, b) => {
 			if (a.Name === b.Name) {
 				return 0;
 			}
@@ -50,6 +43,7 @@ class PlantTable extends React.Component {
 				</header>
 				<Buttons
 					handleNameSort={this.handleNameSort}
+					onChange = {this.onChange}
 				/>
 				<table className="table tableContainer table-hover">
 					<thead>

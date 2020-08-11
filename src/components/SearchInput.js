@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function SearchInput({ onChange, value }) {
   return (
     <div className="container w-25 safeButton mt-3 pt-2">
