@@ -7,7 +7,14 @@ import "./style.css";
 import Buttons from "./buttons";
 
 class PlantTable extends React.Component {
-	state = { order: "ascending" };
+	state = { order: "ascending", search: "" };
+
+	//function to change search
+	handleSearch = (value) => {
+		this.setState({
+			search: value,
+		});
+	};
 
 	// function to sort by Name
 	handleNameSort = () => {
@@ -17,22 +24,26 @@ class PlantTable extends React.Component {
 	};
 
 	render() {
-		const sortedPlants = plants.sort((a, b) => {
-			if (a.Name === b.Name) {
-				return 0;
-			}
-			if (this.state.order === "ascending") {
-				if (a.Name < b.Name) {
+		let search;
+		const sortedPlants = plants.filter((plant) => {
+			plant.Name.toLowerCase()
+				.includes(search.toLowerCase())
+				.sort((a, b) => {
+					if (a.Name === b.Name) {
+						return 0;
+					}
+					if (this.state.order === "ascending") {
+						if (a.Name < b.Name) {
+							return -1;
+						}
+						return 1;
+					}
+					if (a.Name < b.Name) {
+						return 1;
+					}
 					return -1;
-				}
-				return 1;
-			}
-			if (a.Name < b.Name) {
-				return 1;
-			}
-			return -1;
+				});
 		});
-
 		return (
 			<div className="container mt-4">
 				<header className="headerContainer mb-2 pt-2 text-center">
@@ -40,8 +51,10 @@ class PlantTable extends React.Component {
 				</header>
 				<Buttons
 					handleNameSort={this.handleNameSort}
-					onChange={this.onChange}
+					handleSearch={this.handleSearch}
+					search={this.state.search}
 				/>
+
 				<table className="table tableContainer table-hover">
 					<thead>
 						<tr>
