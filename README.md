@@ -3,7 +3,7 @@
 ![](https://github.com/Q118/reactory/blob/master/screenshot.png)
 
 ```
-A directory of medicinal plants build with React. 
+A directory of medicinal plants built with React. 
 View a table of medicinal plants that can be found in nature or 
 health stores to take for reasons in lieu of western medicine.
 This project required me to break up my application's UI into 
