@@ -6,9 +6,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./style.css";
 import Buttons from "./buttons";
 
-
 class PlantTable extends React.Component {
-	state = { order: "ascending"};
+	state = { order: "ascending" };
 
 	// function to sort by Name
 	handleNameSort = () => {
@@ -17,9 +16,7 @@ class PlantTable extends React.Component {
 		});
 	};
 
-
 	render() {
-
 		const sortedPlants = plants.sort((a, b) => {
 			if (a.Name === b.Name) {
 				return 0;
@@ -43,7 +40,7 @@ class PlantTable extends React.Component {
 				</header>
 				<Buttons
 					handleNameSort={this.handleNameSort}
-					onChange = {this.onChange}
+					onChange={this.onChange}
 				/>
 				<table className="table tableContainer table-hover">
 					<thead>

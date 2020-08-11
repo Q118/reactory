@@ -6,7 +6,6 @@ import "./style.css";
 import plantsJson from "../plants.json";
 import SearchInput from "./SearchInput";
 
-
 function Buttons(props) {
 	const [search, setSearch] = useState("");
 	let plants;
@@ -29,9 +28,8 @@ function Buttons(props) {
 			<SearchInput
 				value={search}
 				onChange={(event) => setSearch(event.target.value)}
-				plants = {plants}
+				plants={plants}
 			/>
-			
 		</div>
 	);
 }

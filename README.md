@@ -1,49 +1,60 @@
-For this assignment, you'll create a employee directory with React. 
+# Reactory
 
-medicinal plants found in nature or herb stores to take for reasons in leui of western medicine.
-some people may want to finsd alternatives for their ailments
+![](https://github.com/Q118/reactory/blob/master/screenshot.png)
 
-This assignment will require you to break up your application's UI into components, 
-manage component state, 
-and respond to user events.
+```
+A directory of medicinal plants build with React. 
+View a table of medicinal plants that can be found in nature or 
+health stores to take for reasons in lieu of western medicine.
+This project required me to break up my application's UI into 
+components, manage component state, and respond to user events.
+```
 
-As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
-
-
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. 
-It would be particularly helpful to be able to filter employees by name.
-
-
-Given a table of random users, when the user loads the page, a table of employees should render.
-The user should be able to:
-        Sort the table by at least one category
-        Filter the users by at least one property.
+## Table of Contents
+    
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#🛡Badge📛)
+* [Contact](#Contact)
 
 
-work flow:
-        API running, search query
-            decide on an APi: just need to searcg and sort by at least one category
-            OMDB: 
+## Installation
+
+* Open the project in VScode
+* Start by running `npm start` in the terminal or view with Live Server
+* View in localhost, port 3000
+* Click the button to toggle the name sort alphabetically 
+* Search for an item to filter
+* Repeat as many times as you like
+
+
+## Usage
+
+Deployed on GitHub Pages
+* [View the live app here!](https://q118.github.io/reactory/)
+
+
+## 🛡Badge📛
+
+![](https://img.shields.io/badge/Shelby-Anne-purple)
+
+
+## Contributing
         
-
-        generate layout
-            table columns:  ID, name, benefits, safety rating out of 5, image
-        sort by condintion
-        drop down menu to filter
-
-        code to dynamically render
-
-todo:
--rewrite readme about the reason why this would benefit people
-
-
-to deploy :   npm run deploy
-
-tools added: axios, bootstrap,
-
-future ideas: make this app with anothyer api to diversify my portfolio
-    search for condition 
-    filter by above 4 or below 4
+Please feel free to fork, add comments, and share.
+    
+        
+## Tests
+    
+Test to be done through VScode and Chrome.
+    
+    
+## Contact
+    
+Reach out to me with any questions!
+    
+* [Visit my GitHub Page](https://github.com/q118).
+* [Send me an Email](mailto:shelbyfish91@gmail.com).
+* [View more of my apps in my portfolio](https://q118.github.io/shelby_rothman/portfolio.html).
 
 
-It must be built with react, have a table, ability to sort by at least one category, ability to filter by at least one category.
