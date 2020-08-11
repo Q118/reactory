@@ -50,9 +50,8 @@ class PlantTable extends React.Component {
 				</header>
 				<Buttons
 					handleNameSort={this.handleNameSort}
-					handleFilterChange={this.handleFilter}
 				/>
-				<table className="table tableContainer">
+				<table className="table tableContainer table-hover">
 					<thead>
 						<tr>
 							<th scope="col">ID</th>
