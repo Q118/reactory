@@ -13,19 +13,14 @@ import "./style.css";
 //   };
 // const filteredPlants = plants.filter(plant => plant.safeLongTerm === "Yes");
 
-
 function Buttons(props) {
-    // const [allPlants] = useState([...plants]);
-    // const [safePlants] = useState(plants.filter(plant => plant.safeLongTerm === "Yes"));
-    // const [unsafePlants] = useState(plants.filter(plant => plant.safeLongTerm === "No"));
+	// const [allPlants] = useState([...plants]);
+	// const [safePlants] = useState(plants.filter(plant => plant.safeLongTerm === "Yes"));
+	// const [unsafePlants] = useState(plants.filter(plant => plant.safeLongTerm === "No"));
 
-    
-    // const [filter, setFilter] = useState("All");
+	// const [filter, setFilter] = useState("All");
 
-
-    //     setFilterOption(event.target);
-    
-    
+	//     setFilterOption(event.target);
 
 	return (
 		<div className="container buttonContainer mb-2 text-center">
@@ -38,8 +33,7 @@ function Buttons(props) {
 				&nbsp;&nbsp;&nbsp;
 				<button
 					className="btn safeButton btn-lg"
-                    onClick={props.handleFilterChange}
-                    >
+					onClick={props.handleFilterChange}>
 					Filter: Long-Term Safety
 				</button>
 			</div>
@@ -55,11 +49,8 @@ export default Buttons;
 // />
 // onChange={props.handleFilterChange}
 
-
-  
 // handleFilter = (plantId) => {
 //     this.setState({
 //       list: this.state.list.filter((plant => plant.Safety >= 4)
 //     });
 //   }
-  

@@ -7,7 +7,9 @@ import "./style.css";
 import Buttons from "./buttons";
 
 // const filteredPlants = plants.filter(plant => plant.safeLongTerm === "Yes");
-const allPlants = plants.filter(plant => plant.safeLongTerm === "Yes" || "n/a" || "No");
+const allPlants = plants.filter(
+	(plant) => plant.safeLongTerm === "Yes" || "n/a" || "No"
+);
 
 class PlantTable extends React.Component {
 	state = { order: "ascending", allPlants };
@@ -17,19 +19,17 @@ class PlantTable extends React.Component {
 		this.setState({
 			order: this.state.order === "ascending" ? "descending" : "ascending",
 		});
-  };
+	};
 
-  handleFilterChange = () =>  allPlants.filter(plant => plant.safeLongTerm === "Yes") ;
+	handleFilterChange = () =>
+		allPlants.filter((plant) => plant.safeLongTerm === "Yes");
 
 	render() {
-    // const filteredPlants = plants.filter(plant => plant.safeLongTerm === "Yes");
-    
-   
+		// const filteredPlants = plants.filter(plant => plant.safeLongTerm === "Yes");
 
-    const sortedPlants = allPlants.sort((a, b) => {
+		const sortedPlants = allPlants.sort((a, b) => {
 			if (a.Name === b.Name) {
-        return 0;
-        
+				return 0;
 			}
 			if (this.state.order === "ascending") {
 				if (a.Name < b.Name) {
@@ -40,24 +40,18 @@ class PlantTable extends React.Component {
 			if (a.Name < b.Name) {
 				return 1;
 			}
-      return -1;
-      
-
-    });
-    
-   
-
-    
+			return -1;
+		});
 
 		return (
 			<div className="container mt-4">
 				<header className="headerContainer mb-2 pt-2 text-center">
 					<h1>Medicinal Plants</h1>
 				</header>
-        <Buttons
-         handleNameSort={this.handleNameSort} 
-         handleFilterChange={this.handleFilter}
-         />
+				<Buttons
+					handleNameSort={this.handleNameSort}
+					handleFilterChange={this.handleFilter}
+				/>
 				<table className="table tableContainer">
 					<thead>
 						<tr>
@@ -72,7 +66,9 @@ class PlantTable extends React.Component {
 						{sortedPlants.map((plant) => (
 							<tr key={plant.Id}>
 								<th scope="row">{plant.Id}</th>
-								<td><strong>{plant.Name}</strong></td>
+								<td>
+									<strong>{plant.Name}</strong>
+								</td>
 								<td>{plant.Benefits}</td>
 								<td>{plant.safeLongTerm}</td>
 								<td>
